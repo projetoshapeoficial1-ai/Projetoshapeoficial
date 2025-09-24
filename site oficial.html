@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projeto Shape - Emagrecimento Saudável</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #0d0d0d;
+        color: #fff;
+        line-height: 1.6;
+    }
+    header {
+        background: url('https://images.unsplash.com/photo-1594737625785-cf0c81f2f7a0?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+        padding: 80px 20px;
+        text-align: center;
+        position: relative;
+    }
+    header::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.6);
+    }
+    header .content {
+        position: relative;
+        z-index: 2;
+        max-width: 1000px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    header h1 {
+        font-size: 2.8rem;
+        margin: 0;
+        color: #ff0000;
+    }
+    header p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+    header img {
+        max-width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255,0,0,0.7);
+    }
+    .cta-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 15px 30px;
+        background: #ff0000;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .cta-btn:hover {
+        background: #cc0000;
+    }
+    section {
+        padding: 60px 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #ff0000;
+    }
+    .benefits {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    .benefit-box {
+        background: #1a1a1a;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #ff0000;
+        text-align: center;
+    }
+    .benefit-box img {
+        width: 50px;
+        margin-bottom: 15px;
+    }
+    .content-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        align-items: center;
+    }
+    .content-section img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .testimonials {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    .testimonial {
+        background: #141414;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .testimonial img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+    .guarantee {
+        text-align: center;
+        padding: 40px 20px;
+        background: #1a1a1a;
+        border-radius: 10px;
+        margin-top: 40px;
+    }
+    .guarantee img {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #0d0d0d;
+        border-top: 1px solid #222;
+        font-size: 0.9rem;
+    }
+
+    /* Mostrador de preço agressivo */
+    .price-tag {
+        display: inline-block;
+        background: #ff0000;
+        color: #fff;
+        font-size: 3rem;
+        font-weight: bold;
+        padding: 20px 40px;
+        border-radius: 15px;
+        text-shadow: 0 0 20px #ff0000, 0 0 40px #ff4b2b;
+        margin: 20px 0;
+        animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+        0%,100% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+    }
+    .price-img {
+        width: 200px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="content">
+        <div>
+            <h1>Transforme seu Corpo com o Projeto Shape</h1>
+            <p>O método comprovado para emagrecer de forma saudável e definitiva</p>
+            <a href="#oferta" class="cta-btn">Quero Começar Agora</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=400&q=80" alt="Capa Projeto Shape">
+    </div>
+</header>
+
+<section>
+    <h2>O que você vai conquistar?</h2>
+    <div class="benefits">
+        <div class="benefit-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="balança">
+            <h3>Emagrecimento Sustentável</h3>
+            <p>Perda de peso sem dietas malucas e sem passar fome.</p>
+        </div>
+        <div class="benefit-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/2966/2966486.png" alt="musculação">
+            <h3>Treinos Inteligentes</h3>
+            <p>Rotinas práticas que aceleram os resultados.</p>
+        </div>
+        <div class="benefit-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/1046/1046787.png" alt="saúde">
+            <h3>Hábitos Saudáveis</h3>
+            <p>Construa uma rotina que mantém o resultado para sempre.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>O que você vai encontrar no Projeto Shape</h2>
+    <div class="content-section">
+        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=600&q=80" alt="Treino">
+        <div>
+            <h3>Treinos Simples e Eficientes</h3>
+            <p>Programas de treino direto ao ponto, adaptáveis para qualquer nível, que você pode fazer na academia ou em casa.</p>
+        </div>
+    </div>
+    <div class="content-section" style="margin-top:40px;">
+        <div>
+            <h3>Alimentação Inteligente</h3>
+            <p>Cardápios práticos e flexíveis, sem restrições absurdas, que permitem comer bem e ainda emagrecer.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Alimentação">
+    </div>
+</section>
+
+<section>
+    <h2>Histórias de Sucesso</h2>
+    <div class="testimonials">
+        <div class="testimonial">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="cliente">
+            <p>“Em 3 meses perdi 12kg sem sofrimento. O melhor investimento que já fiz!”</p>
+            <strong>- Mariana S.</strong>
+        </div>
+        <div class="testimonial">
+            <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="cliente">
+            <p>“Aprendi a treinar e comer do jeito certo. Hoje me sinto outra pessoa.”</p>
+            <strong>- João P.</strong>
+        </div>
+    </div>
+</section>
+
+<section class="guarantee">
+ 
+ <img src="https://i.supaimg.com/dc4a304f-532c-410d-a16b-1e54fdc9acac.png"
+  alt="Garantia de 7 dias">   
+    <h2>Garantia de 7 Dias</h2>
+    <p>Se você não ficar satisfeito, devolvemos 100% do seu investimento. Sem burocracia.</p>
+</section>
+
+<section id="oferta" style="text-align:center; margin-top:40px;">
+    <h2>Oferta Explosiva!</h2>
+    <p>Acesse o <strong>Projeto Shape</strong> agora mesmo com desconto imperdível.</p>
+    
+    <!-- Mostrador de preço agressivo -->
+    <div style="display:inline-block; margin:20px 0; text-align:center;">
+        <div class="price-tag-aggressive">
+            <span style="font-size:2rem; display:block;">Só hoje!</span>
+            <span style="font-size:4rem; font-weight:bold;">R$29,99</span>
+           
+        </div>
+    </div>
+    
+   
+    
+        
+        
+   
+    
+    <a href="https://pay.kirvano.com/cccea75a-6e78-4cc2-a983-4bc87c00e28b" class="cta-btn">Comprar Agora</a>
+</section>
+
+<style>
+.price-tag-aggressive {
+    background: linear-gradient(45deg, #ff0000, #ff7b00);
+    color: #fff;
+    padding: 25px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #ff0000, 0 0 40px #ff7b00, 0 0 60px #ff4b2b;
+    display: inline-block;
+    animation: pulse-shake 1.5s infinite;
+    text-align: center;
+}
+@keyframes pulse-shake {
+    0%,100% { transform: scale(1) rotate(0deg); }
+    25% { transform: scale(1.1) rotate(-2deg); }
+    50% { transform: scale(1.15) rotate(2deg); }
+    75% { transform: scale(1.1) rotate(-1deg); }
+}
+</style>
